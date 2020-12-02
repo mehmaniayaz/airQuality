@@ -15,4 +15,4 @@ def param_grid_evaluation(model, param_grid, metric):
     features = params + [metric]
     for i in features:
         plt.figure()
-        sns.scatterplot(x=i, y='mean_test_score', data=df_paramgrid)
+        sns.scatterplot(x=i, y=metric, data=df_paramgrid)
