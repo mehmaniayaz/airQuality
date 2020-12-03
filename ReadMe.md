@@ -16,7 +16,13 @@ which parameters affect them most.
 We can get some useful features from the datetime column by extracting time of day (morning, afternoon, evening, 
 night, sleep-time), day of the week, and month. I furthermore decided to sum up the amount of chemicals to obtain
 a danger meter. This step has the added benefit of reducing the dimension of the target variable space.  
+
 ## Data Preprocessing <a name="data_preprocessing"></a>
+The first priority is to fill up missing values of the ground truth values for the chemicals. In other words, 
+we are going to use the sensor data to fill up the missing true chemical values throughout the given timeline.
+For this step I have used Scitkit-Learn's iterative imputer to build a relationship between the chemicals (
+sensor and real) only. Similarly missing values for temperature and humidity are imputed with the iterative imputer
+given the inherent relationship between these variables.
 
 ## Results <a name="results"></a>
 ## Conclusions <a name="conclusions"></a>
