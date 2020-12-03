@@ -37,5 +37,5 @@ def visualize_n_important_features(df, n, model, target):
     plt.figure()
     sns.pairplot(df[list(dict_feature_importance_sorted.keys())[0:n] + target])
 
-    plt.figure(figsize=(12, 8))
+    plt.figure(figsize=(12, 8))pi
     sns.heatmap(df[list(dict_feature_importance_sorted.keys())[0:n] + ['total-chemicals']].corr(), annot=True)
