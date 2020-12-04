@@ -32,12 +32,23 @@ I have used Random Forest Regressor to build a machine learning model. They accu
 sets are about 94% and 64%. This discrepancy indicates a high amount of overfitting which is likely due to the
 correlation between relative and absolute humidity and the increased number of dummy variables which increases
 the dimension of the feature space. Finally, we leverage SHAP values to identify the most important features.
+
+
+<img src="./plots/residual_analysis.png " width="80%"/>
+
+Figure 1: We observe that our model does not predict all values with equally indicating higher errors in predicting chemical
+concentratios with intermediate values
  
 ## Conclusions <a name="conclusions"></a>
-We find that the hours between 12AM to 6Am have the highest impact on air pollution. The influence is followed by 
-temperature and whether the time of day is evening. Month of November has an important effect amongst all months
-on air pollution, likely due to the increased travel and temperature. Interestingly, pollution increases on Sundays
-but Saturdays do not have a particular impact.
+We find that hours between 12AM to 6Am (sleep_time) and 4PM to 8PM (evening) have the highest impact on air pollution.
+The influence follows whether a day is a Sunday. Weather conditions (temperature and humidity) have a considerable
+impact as well, though their influence is not as clear-cut as the time of day and day of the week.  Month of November
+has an important effect amongst all months on air pollution, likely due to the increased travel and decreased 
+temperature. Interestingly, although pollution increases on Sundays, Saturdays do not have a particular impact.
+
+<img src="./plots/shap.png " width="80%"/>
+
+Figure 2: SHAP value of features. 
 
 ## Dateset <a name="dataset"></a>
 You can find the data [here](https://archive.ics.uci.edu/ml/datasets/Air+Quality).
