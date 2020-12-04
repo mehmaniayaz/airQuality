@@ -18,6 +18,9 @@ night, sleep-time), day of the week, and month. I furthermore decided to sum up 
 a danger meter. This step has the added benefit of reducing the dimension of the target variable space.  
 
 ## Data Preprocessing <a name="data_preprocessing"></a>
+An immediate observation is that NMHC ground truth, with an above 90% missing sample, is an unreliable feature and should therefore be dropped.
+A pairplot visualization of data suggests that the chemical values should be normalized as their magnitudes relative to each other is not important.
+This step will furthermore help us in summing up the chemicals as part of feature engineering.
 The first priority is to fill up missing ground truth values for the chemicals. In other words, 
 we are going to use the sensor data to fill up the missing true chemical values throughout the given timeline.
 For this step I have used scitkit-learn's iterative imputer to build a relationship between the chemicals (
