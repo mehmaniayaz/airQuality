@@ -41,7 +41,7 @@ Figure 1: We observe that our model does not predict all values with equally ind
 concentratios with intermediate values
  
 ## Conclusions <a name="conclusions"></a>
-We find that hours between 12AM to 6Am (sleep_time) and 4PM to 8PM (evening) have the highest impact on air pollution.
+We find that hours between 12AM to 6Am (sleep_time) and 4PM to 8PM (evening) have the highest impacts on air pollution.
 The influence follows whether a day is a Sunday. Weather conditions (temperature and humidity) have a considerable
 impact as well, though their influence is not as clear-cut as the time of day and day of the week.  Month of November
 has an important effect amongst all months on air pollution, likely due to the increased travel and decreased 
