@@ -8,7 +8,7 @@
 
 ## Motivation <a name="motivation"></a>
 The dataset contains measurements of air chemicals through sensors. A sparser set of ground truth
-values for the chemicals are provided as well along with information on humidity, temperature, and time.
+values for the chemicals are provided along with information on humidity, temperature, and time.
 My goal in the project is to predict the presence of chemicals in the air and gain some useful information on
 which parameters affect them most.
   
