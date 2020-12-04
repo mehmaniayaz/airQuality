@@ -49,7 +49,7 @@ temperature. Interestingly, although pollution increases on Sundays, Saturdays d
 
 <img src="./plots/shap.png " width="80%"/>
 
-Figure 2: SHAP value of features. 
+Figure 2: SHAP values. Time of day and day of week have the highest impact on air pollution. 
 
 ## Dateset <a name="dataset"></a>
 You can find the data [here](https://archive.ics.uci.edu/ml/datasets/Air+Quality).
