@@ -37,8 +37,8 @@ I decided to keep the detailed categorical features to obtain usefule informatio
 
 <img src="./plots/residual_analysis.png " width="80%"/>
 
-Figure 1: We observe that our model does not predict all values with equally indicating higher errors in predicting chemical
-concentratios with intermediate values
+Figure 1: We observe that our model does not predict all values  equally, indicating higher errors in predicting chemical
+concentrations at intermediate chemical concentrations.
  
 ## Conclusions <a name="conclusions"></a>
 We find that hours between 12AM to 6Am (sleep_time) and 4PM to 8PM (evening) have the highest impacts on air pollution.
