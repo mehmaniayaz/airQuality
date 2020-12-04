@@ -15,7 +15,7 @@ which parameters affect them most.
 ## Feature Engineering <a name="feature_engineering"></a>
 We can get some useful features from the datetime column by extracting time of day (morning, afternoon, evening, 
 night, sleep-time), day of the week, and month. I furthermore decided to sum up the amount of chemicals to obtain
-a danger meter. This step has the added benefit of reducing the dimension of the target variable space.  
+a single target variable. This step has the benefit of reducing the dimension of the target variable space.  
 
 ## Data Preprocessing <a name="data_preprocessing"></a>
 An immediate observation is that NMHC ground truth, with an above 90% missing sample, is an unreliable feature and should therefore be dropped.
