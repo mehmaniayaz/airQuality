@@ -25,8 +25,8 @@ The first priority is to fill up missing ground truth values for the chemicals. 
 we are going to use the sensor data to fill up the missing true chemical values throughout the given timeline.
 For this step I have used scitkit-learn's iterative imputer to build a relationship between the chemicals (
 sensor and real) only. Similarly, missing values for temperature and humidity are imputed with the iterative imputer
-given the inherent relationship between these variables. Figure 1 illustrates  that the relationship between the 
-variables are preserved following the imputation.
+given the inherent relationship between these variables. Compared to univariate imputer, the iterative imputer attempts 
+to keep the relationship between features as close as possible.
 
 ## Results <a name="results"></a>
 I have used Random Forest Regressor to build a machine learning model. They accuracy of the r2 score of train and test
