@@ -30,7 +30,7 @@ as close as possible.
 
 ## Results <a name="results"></a>
 I have used Random Forest Regressor to build a machine learning model. They accuracy of the r2 score of train and test
-sets are about 94% and 57%. This discrepancy indicates a high amount of overfitting which is likely due to the
+sets are about 93% and 58%. This discrepancy indicates a high amount of overfitting which is likely due to the
 the increased number of dummy variables which increases the dimension of the feature space. However, despite the overfitting consequence,
 I decided to keep the detailed categorical features to obtain useful information on when air pollution is highest. 
 
