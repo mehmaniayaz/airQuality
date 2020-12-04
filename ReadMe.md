@@ -23,8 +23,7 @@ A pairplot visualization of data suggests that the chemical values should be nor
 This step will furthermore help us in summing up the chemicals as part of feature engineering.
 The first priority is to fill up missing ground truth values for the chemicals. In other words, 
 we are going to use the sensor data to fill up the missing true chemical values throughout the given timeline.
-For this step I have used scitkit-learn's iterative imputer to build a relationship between the chemicals (
-sensor and real) only. Similarly, missing values for temperature and humidity are imputed with the iterative imputer
+For this step I have used scitkit-learn's iterative imputer to build a relationship between the chemicals (sensor and real) only. Similarly, missing values for temperature and humidity are imputed with the iterative imputer
 given the inherent relationship between these variables. Compared to univariate imputer, the iterative imputer attempts 
 to keep the relationship between features as close as possible.
 
